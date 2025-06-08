@@ -36,6 +36,35 @@ header {
   display: block;
 }
 
+.slider {
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.slider .prev {
+  left: 5px;
+}
+
+.slider .next {
+  right: 5px;
+}
+
 .item h2 {
   font-size: 1.2rem;
   margin: 0.5rem;
