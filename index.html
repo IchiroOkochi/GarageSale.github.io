@@ -1,197 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garage Sale</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny's Garage Sale - Quality Items for Sale</title>
 </head>
 <body>
-  <header>
-    <h1>Garage Sale</h1>
-  </header>
-  <main class="items">
-    <article class="item">
-      
-        <img src="images/IMG_7275.JPG" alt="Garage sale item">
-        
-      <h2>Item 1</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
-    <article class="item">
-      <img src="images/IMG_7276.JPG" alt="Garage sale item">
-      <h2>Item 2</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
-    
-    <article class="item">
-      <div class="slider">
-        <button class="prev">&lt;</button>
-        <button class="next">&gt;</button>
-        <img src="images/IMG_7277.JPG" alt="Garage sale item">
-        <img src="images/IMG_7278.JPG" alt="Garage sale item">
-      </div>
-      
-      <h2>Item 2</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
-    
-    <!-- <article class="item">
-        <img src="images/IMG_7279.JPG" alt="Garage sale item">
-      <h2>Item 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article> -->
+    <div class="floating-elements">
+        <div class="floating-element" style="width: 60px; height: 60px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+        <div class="floating-element" style="width: 40px; height: 40px; top: 60%; left: 80%; animation-delay: 2s;"></div>
+        <div class="floating-element" style="width: 80px; height: 80px; top: 80%; left: 20%; animation-delay: 4s;"></div>
+    </div>
 
-    <!-- <article class="item">
-      <img src="images/IMG_7278.JPG" alt="Garage sale item">
-      <h2>Item 4</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
-    <article class="item">
-      <div class="slider">
-        <button class="prev">&lt;</button>
-        <button class="next">&gt;</button>
-        <img src="images/IMG_7279.JPG" alt="Garage sale item">
-        <img src="images/IMG_7281.JPG" alt="Garage sale item">
-      </div>
-      <h2>Item 5</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+    <div class="container">
+        <header>
+            <h1>🏠 Sunny's Garage Sale</h1>
+            <p class="subtitle">Quality pre-owned items at great prices!</p>
+            <div class="sale-info">
+                📍 123 Oak Street, Maplewood | 📅 Saturday & Sunday, 8 AM - 4 PM | ☎️ (555) 123-4567
+            </div>
+        </header>
 
-    <!-- <article class="item">
-      <img src="images/IMG_7280.JPG" alt="Garage sale item">
-      <h2>Item 6</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
-    <article class="item">
-      
-      <h2>Item 7</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
+        <div class="items-grid">
+            <div class="item-card">
+                <div class="image-carousel">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop" alt="Vintage Leather Armchair - Front View" class="item-image active">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400&h=250&fit=crop" alt="Vintage Leather Armchair - Side View" class="item-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop&sat=-50" alt="Vintage Leather Armchair - Back View" class="item-image">
+                    <button class="carousel-arrows carousel-prev">‹</button>
+                    <button class="carousel-arrows carousel-next">›</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                    <div class="image-counter">1 / 3</div>
+                </div>
+                <div class="item-content">
+                    <h3 class="item-name">Vintage Leather Armchair</h3>
+                    <p class="item-price">$85</p>
+                    <p class="item-description">Beautiful brown leather armchair from the 1980s. Comfortable and stylish, perfect for a reading nook or living room. Shows some wear but still very sturdy and functional.</p>
+                    <span class="item-condition condition-good">Good Condition</span>
+                </div>
+            </div>
 
-    <!-- <article class="item">
-      <img src="images/IMG_7282.JPG" alt="Garage sale item">
-      <h2>Item 8</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
+            <div class="item-card">
+                <div class="image-carousel">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop" alt="Kitchen Stand Mixer - Front View" class="item-image active">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop" alt="Kitchen Stand Mixer - With Attachments" class="item-image">
+                    <button class="carousel-arrows carousel-prev">‹</button>
+                    <button class="carousel-arrows carousel-next">›</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                    <div class="image-counter">1 / 2</div>
+                </div>
+                <div class="item-content">
+                    <h3 class="item-name">Kitchen Stand Mixer</h3>
+                    <p class="item-price">$45</p>
+                    <p class="item-description">5-quart stand mixer with multiple attachments. Great for baking bread, cookies, and cakes. Used but well-maintained. Includes dough hook, whisk, and paddle.</p>
+                    <span class="item-condition">Excellent Condition</span>
+                </div>
+            </div>
 
-    <article class="item">
-      <img src="images/IMG_7283.JPG" alt="Garage sale item">
-      <h2>Item 9</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="Kids' Bicycle" class="item-image">
+                <div class="item-content">
+                    <h3 class="item-name">Kids' Mountain Bike</h3>
+                    <p class="item-price">$35</p>
+                    <p class="item-description">20-inch mountain bike perfect for kids ages 6-10. Red and black color scheme. Includes training wheels (removable) and a bell. Recently tuned up with new brake pads.</p>
+                    <span class="item-condition condition-good">Good Condition</span>
+                </div>
+            </div>
 
-    <article class="item">
-      <img src="images/IMG_7284.JPG" alt="Garage sale item">
-      <h2>Item 10</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            <div class="item-card">
+                <div class="image-carousel">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=400&h=250&fit=crop" alt="Dining Table Set - Full Set" class="item-image active">
+                    <img src="https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=250&fit=crop" alt="Dining Table Set - Table Detail" class="item-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop&hue=180" alt="Dining Table Set - Chair Detail" class="item-image">
+                    <button class="carousel-arrows carousel-prev">‹</button>
+                    <button class="carousel-arrows carousel-next">›</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                    <div class="image-counter">1 / 3</div>
+                </div>
+                <div class="item-content">
+                    <h3 class="item-name">Wooden Dining Table Set</h3>
+                    <p class="item-price">$120</p>
+                    <p class="item-description">Solid wood dining table with 4 matching chairs. Perfect for a small family. Table extends to seat 6. Minor scratches on surface but structurally sound.</p>
+                    <span class="item-condition condition-fair">Fair Condition</span>
+                </div>
+            </div>
 
-    <article class="item">
-      <img src="images/IMG_7285.JPG" alt="Garage sale item">
-      <h2>Item 11</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=250&fit=crop" alt="Garden Tools" class="item-image">
+                <div class="item-content">
+                    <h3 class="item-name">Garden Tool Set</h3>
+                    <p class="item-price">$25</p>
+                    <p class="item-description">Complete set of garden tools including shovel, rake, hoe, and hand tools. All tools are in working condition. Perfect for someone starting a new garden.</p>
+                    <span class="item-condition condition-good">Good Condition</span>
+                </div>
+            </div>
 
-    <!-- <article class="item">
-      <img src="images/IMG_7286.JPG" alt="Garage sale item">
-      <h2>Item 12</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1585007600263-71228e40c8d1?w=400&h=250&fit=crop" alt="Book Collection" class="item-image">
+                <div class="item-content">
+                    <h3 class="item-name">Classic Literature Collection</h3>
+                    <p class="item-price">$30</p>
+                    <p class="item-description">Collection of 25 classic novels including works by Dickens, Austen, and Hemingway. Mix of hardcover and paperback books. Great for book lovers or students.</p>
+                    <span class="item-condition">Excellent Condition</span>
+                </div>
+            </div>
 
-    <article class="item">
-      <img src="images/IMG_7287.JPG" alt="Garage sale item">
-      <h2>Item 13</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=250&fit=crop" alt="Coffee Table" class="item-image">
+                <div class="item-content">
+                    <h3 class="item-name">Glass Coffee Table</h3>
+                    <p class="item-price">$55</p>
+                    <p class="item-description">Modern glass-top coffee table with chrome legs. Rectangular shape, perfect for living room. Glass is tempered and safe. Shows minimal wear.</p>
+                    <span class="item-condition condition-good">Good Condition</span>
+                </div>
+            </div>
 
-    <article class="item">
-      <img src="images/IMG_7289.JPG" alt="Garage sale item">
-      <h2>Item 14</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=250&fit=crop" alt="Exercise Equipment" class="item-image">
+                <div class="item-content">
+                    <h3 class="item-name">Home Exercise Set</h3>
+                    <p class="item-price">$40</p>
+                    <p class="item-description">Includes resistance bands, yoga mat, and set of dumbbells (5, 10, 15 lbs). Great for home workouts. All equipment is clean and functional.</p>
+                    <span class="item-condition">Excellent Condition</span>
+                </div>
+            </div>
+        </div>
 
-    <article class="item">
-      <img src="images/IMG_7290.JPG" alt="Garage sale item">
-      <h2>Item 15</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+        <footer class="footer">
+            <p class="contact-info">📧 Contact: sunny.garage.sale@email.com</p>
+            <p class="contact-info">💬 "Cash only, but we're happy to negotiate on bundled items!"</p>
+            <p class="contact-info">🚗 Easy parking available in driveway and street</p>
+        </footer>
+    </div>
 
-    <article class="item">
-      <img src="images/IMG_7291.JPG" alt="Garage sale item">
-      <h2>Item 16</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+    <script>
+        // Touch swipe support for mobile
+        function addTouchSupport(carousel) {
+            let startX = 0;
+            let startY = 0;
+            let currentX = 0;
+            let isScrolling = null;
 
-    <article class="item">
-      <div class="slider">
-        <button class="prev">&lt;</button>
-        <button class="next">&gt;</button>
-        <img src="images/IMG_7292.JPG" alt="Garage sale item">
-        <img src="images/IMG_7293.JPG" alt="Garage sale item">
-        <img src="images/IMG_7294.JPG" alt="Garage sale item">
-      </div>
-      <h2>Item 5</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            const handleTouchStart = (e) => {
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+                isScrolling = null;
+            };
 
-    <!-- <article class="item">
-      <img src="images/IMG_7292.JPG" alt="Garage sale item">
-      <h2>Item 17</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
+            const handleTouchMove = (e) => {
+                currentX = e.touches[0].clientX;
+                const diffX = Math.abs(currentX - startX);
+                const diffY = Math.abs(e.touches[0].clientY - startY);
 
-    <!-- <article class="item">
-      <img src="images/IMG_7293.JPG" alt="Garage sale item">
-      <h2>Item 18</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
+                if (isScrolling === null) {
+                    isScrolling = diffY > diffX;
+                }
 
-    <!-- <article class="item">
-      <img src="images/IMG_7294.JPG" alt="Garage sale item">
-      <h2>Item 19</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
+                if (!isScrolling && diffX > 10) {
+                    e.preventDefault();
+                }
+            };
 
-    <article class="item">
-      <img src="images/IMG_7295.JPG" alt="Garage sale item">
-      <h2>Item 20</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            const handleTouchEnd = (e) => {
+                if (isScrolling) return;
 
-    <article class="item">
-      <img src="images/IMG_7296.JPG" alt="Garage sale item">
-      <h2>Item 21</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+                const diffX = currentX - startX;
+                const threshold = 50;
 
-    <!-- <article class="item">
-      <img src="images/IMG_7297.JPG" alt="Garage sale item">
-      <h2>Item 22</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article> -->
+                if (Math.abs(diffX) > threshold) {
+                    const nextBtn = carousel.querySelector('.carousel-next');
+                    const prevBtn = carousel.querySelector('.carousel-prev');
 
-    <article class="item">
-      <img src="images/IMG_7298.JPG" alt="Garage sale item">
-      <h2>Item 23</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+                    if (diffX > 0 && prevBtn) {
+                        prevBtn.click();
+                    } else if (diffX < 0 && nextBtn) {
+                        nextBtn.click();
+                    }
+                }
+            };
 
-    <article class="item">
-      <img src="images/IMG_7299.JPG" alt="Garage sale item">
-      <h2>Item 24</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
+            carousel.addEventListener('touchstart', handleTouchStart, { passive: true });
+            carousel.addEventListener('touchmove', handleTouchMove, { passive: false });
+            carousel.addEventListener('touchend', handleTouchEnd, { passive: true });
+        }
 
-    <article class="item">
-      <img src="images/IMG_7300.JPG" alt="Garage sale item">
-      <h2>Item 25</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </article>
-  </main>
-  <footer>
-    <p>Need more info? Email us at <a href="mailto:you@example.com">you@example.com</a>.</p>
-  </footer>
-  <script src="slider.js"></script>
+        // Image carousel functionality
+        function initializeCarousels() {
+            const carousels = document.querySelectorAll('.image-carousel');
+            
+            carousels.forEach(carousel => {
+                const images = carousel.querySelectorAll('.item-image');
+                const dots = carousel.querySelectorAll('.carousel-dot');
+                const prevBtn = carousel.querySelector('.carousel-prev');
+                const nextBtn = carousel.querySelector('.carousel-next');
+                const counter = carousel.querySelector('.image-counter');
+                let currentIndex = 0;
+
+                function showImage(index) {
+                    // Hide all images and deactivate dots
+                    images.forEach(img => img.classList.remove('active'));
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    
+                    // Show current image and activate dot
+                    images[index].classList.add('active');
+                    if (dots[index]) dots[index].classList.add('active');
+                    
+                    // Update counter
+                    if (counter) {
+                        counter.textContent = `${index + 1} / ${images.length}`;
+                    }
+                }
+
+                function nextImage() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                }
+
+                function prevImage() {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showImage(currentIndex);
+                }
+
+                // Event listeners
+                if (nextBtn) nextBtn.addEventListener('click', nextImage);
+                if (prevBtn) prevBtn.addEventListener('click', prevImage);
+
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        currentIndex = index;
+                        showImage(currentIndex);
+                    });
+                });
+
+                // Auto-advance carousel - only on desktop
+                let autoAdvance;
+                const card = carousel.closest('.item-card');
+                
+                // Check if device supports hover (desktop)
+                if (window.matchMedia('(hover: hover)').matches) {
+                    card.addEventListener('mouseenter', () => {
+                        if (images.length > 1) {
+                            autoAdvance = setInterval(nextImage, 3000);
+                        }
+                    });
+
+                    card.addEventListener('mouseleave', () => {
+                        clearInterval(autoAdvance);
+                    });
+                }
+
+                // Add touch support for mobile
+                addTouchSupport(carousel);
+
+                // Initialize first image
+                showImage(0);
+            });
+        }
+
+        // Add some interactive hover effects
+        document.querySelectorAll('.item-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add floating animation to background elements
+        function createFloatingElements() {
+            const container = document.querySelector('.floating-elements');
+            for (let i = 0; i < 8; i++) {
+                const element = document.createElement('div');
+                element.className = 'floating-element';
+                element.style.width = Math.random() * 60 + 20 + 'px';
+                element.style.height = element.style.width;
+                element.style.left = Math.random() * 100 + '%';
+                element.style.top = Math.random() * 100 + '%';
+                element.style.animationDelay = Math.random() * 6 + 's';
+                element.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                container.appendChild(element);
+            }
+        }
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            createFloatingElements();
+            initializeCarousels();
+        });
+    </script>
 </body>
 </html>
